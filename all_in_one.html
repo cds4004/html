@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> TEST HTML PAGE </title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Most of HTML5 tags">
-    <meta name="keywords" content="HTML5, tags">
-    <meta name="author" content="http://blazardsky.space">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> All HTML Elements in ONE </title>
 </head>
 <body>
     <header>
-      <nav>
+      <!-- the header section of a web -->
+      <nav> 
+        <!-- The nav element defines a set of navigation links: -->
         <p>HEADER</p>
+        <!-- The <menu> HTML element is described in the HTML specification as a semantic alternative to <ul> , but treated by browsers (and exposed through the accessibility tree) as no different than <ul> -->
         <menu type="context" id="navmenu">
-          <menuitem label="Home" icon="icon.png"> <a href="#">Home</a> </menuitem>
+          <menuitem label="Home"> <a href="#">Home</a> </menuitem>
+          <!-- "#" link to the top of the current page-->
         </menu>
       </nav>
     </header>
+
     <main>
-      <h1> Heading... </h1>
-      <h2> Heading... </h2>
-      <h3> Heading... </h3>
-      <h4> Heading... </h4>
-      <h5> Heading... </h5>
-      <h6> Heading... </h6>
+      <h1> 1st level Heading... </h1>
+      <h2> 2nd level Heading... </h2>
+      <h3> 3rd level Heading... </h3>
+      <h4> 4th level Heading... </h4>
+      <h5> 5th level Heading... </h5>
+      <h6> 6th level Heading... </h6>
       <p> 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisi lacus, auctor sit amet purus vel, gravida luctus lectus. Aenean rhoncus dapibus enim, sit amet faucibus leo ornare vitae. <br>
+        A paragraph blabla <br>
+        <!-- <br> refers to linebreak -->
         <span> span </span>
+        <!-- <span> HTML element is a generic inline container for phrasing content, which does not inherently represent anything. -->
         <b>Bold word</b>
         <i>italic</i>
         <em>emphasis</em>
@@ -69,11 +71,13 @@
     </ul>
     
     <hr>
-    
+
+    <!-- The <template> tag is used as a container to hold some HTML content hidden from the user when the page loads. The content inside <template> can be rendered later with a JavaScript. You can use the <template> tag if you have some HTML code you want to use over and over again, but not until you ask for it. -->
     <template>
       <h2>Hidden content (after page loaded).</h2>
     </template>
     
+    <!-- nested video -->
     <video width="640" height="480" src="https://archive.org/download/Popeye_forPresident/Popeye_forPresident_512kb.mp4" controls>
       <track kind="subtitles" src="subtitles_de.vtt" srclang="de">
       <track kind="subtitles" src="subtitles_en.vtt" srclang="en">
@@ -81,11 +85,15 @@
       Sorry, your browser doesn't support HTML5 <code>video</code>, but you can
       download this video from the <a href="https://archive.org/details/Popeye_forPresident" target="_blank">Internet Archive</a>.
     </video>
+
+    <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+    </iframe>
  
-    <object data="flashmovie.swf" width="600" height="800" type="application/x-shockwave-flash">
+<!--     <object data="flashmovie.swf" width="600" height="800" type="application/x-shockwave-flash">
     Please install the Shockwave plugin to watch this movie.
-    </object>
+    </object> -->
     
+    <!-- The <pre> tag defines preformatted text. Text in a <pre> element is displayed in a fixed-width font, and the text preserves both spaces and line breaks. -->
     <pre>
  
                                        _,'/
@@ -129,14 +137,19 @@
       <var> variable </var> = 1000;
       <samp>Traceback (most recent call last):<br>NameError: name 'variabl' is not defined</samp>
     </p>
+
+
     <table>
+      <!-- thead: table header -->
       <thead>
         <tr>
+          <!-- <th> tag defines a header cell in an HTML table -->
           <th>Numbers</th>
           <th>Letters</th>
           <th>Colors</th>
         </tr>
       </thead>
+      <!-- tfoot: table footer -->
       <tfoot>
         <tr>
           <td>123</td>
@@ -177,9 +190,13 @@
       <p>Informations about content.</p>
     </section>
  
+    <!-- The <progress> HTML element displays an indicator showing the completion progress of a task, typically displayed as a progress bar. -->
     <progress value="33" max="100"></progress>
-    <meter value="11" min="0" max="45" optimum="40">25 out of 45</meter> 
+
+    <!-- The <meter> tag defines a scalar measurement within a known range, or a fractional value. -->
+    <meter value="30" min="0" max="45" optimum="40">25 out of 45</meter> 
     
+    <!-- The <output> tag in HTML is used to represent the result of a calculation performed by the client-side script such as JavaScript. The <output> tag is a new tag in HTML 5, and it requires a starting and ends tag. -->
     <p> 2+2 = <output>4</output> </p>
  
     <select>
@@ -199,11 +216,11 @@
       <div> 
         <p> div > div > p </p>
       </div>
-      
     <br>
     
     
     </div>
+    <!-- The HTML <svg> element is a container for SVG graphics. SVG has several methods for drawing paths, boxes, circles, text, and graphic images. -->
      <svg width="100" height="100">
       <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
     </svg> 
@@ -221,6 +238,7 @@
       <source src="https://archive.org/download/ReclaimHtml5/ReclaimHtml5.ogg" type="audio/ogg">
       <source src="https://archive.org/download/ReclaimHtml5/ReclaimHtml5.mp3" type="audio/mpeg">
     </audio>
+
     <p>This is a recording of a talk called <cite>Reclaim HTML5</cite> which was orinally delieved in Vancouver at a <a href="http://www.meetup.com/vancouver-javascript-developers/" taget="_blank">Super VanJS Meetup</a>. It is hosted by <a href="https://archive.org/details/ReclaimHtml5" target="_blank">The Internet Archive</a> and licensed under <a href="http://creativecommons.org/licenses/by/3.0/legalcode" target="_blank">CC 3.0</a>.</p>  
     
     <iframe src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A67HxeUADW4H3ERfaPW59ma?si=PogFcGg9QqapyoPbn2lVOw" width="300" height="380" frameborder="0" allowtransparency="true"></iframe> 
@@ -232,7 +250,7 @@
       </header>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat sollicitudin nisi, at convallis nunc semper et. Donec ultrices odio ac purus facilisis, at mollis urna finibus.</p>
       <figure>
-        <img src="https://placehold.it/600x300" alt="placeholder-image">
+        <img width="50px" src="https://thumbs.dreamstime.com/b/generic-person-gray-photo-placeholder-man-silhouette-white-background-144511705.jpg">
         <figcaption> Caption.</figcaption>
       </figure>
       <footer> <dl> <dt>Published</dt> <dd>17 August 2020</dd> <dt>Tags</dt> <dd>Sample Posts, html example</dd> </dl> </footer>
@@ -253,7 +271,7 @@
     </aside>
     <map name="shapesmap"> <area shape="rect" coords="29,32,230,215" href="#square" alt="Square"> <area shape="circle" coords="360,130,100" href="#circle" alt="Circle"> </map> 
     
-    <img src="https://placehold.it/100x100" alt="placeholder-image">
+    <img width="50px" src="https://thumbs.dreamstime.com/b/generic-person-gray-photo-placeholder-man-silhouette-white-background-144511705.jpg">
     
     <form action="" method="get">
       <label for="browser">Choose your browser from the list:</label>
@@ -269,8 +287,11 @@
     </form>
     
     <footer>
-      <address> relevant contacts <a href="mailto:mail@example.com">mail</a>.</address>
-      <div> created by <a href="https://blazardsky.space">@blazardsky</a></div>
+      <address> relevant contacts <a href="mailto:someone@lu.edu.hk">mail</a>.</address>
+      <div> created by <a href="https://blazardsky.space">@blazardsky</a>
+      & modified by <a href="https://shenjiaxing.github.io" target="_blank">J Shen</a>
+      </div>
+      <!-- try to link to your friends' websites -->
     </footer>
     
 </body>
